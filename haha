@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onel</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        text-align: center;
+        padding: 50px;
+      }
+      .hehe {
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+      }
+      button {
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Teken tombolnya nel</h1>
+    <button onclick="show()">Show</button>
+
+    <div class="hehe" id="hehe" style="display: none"></div>
+
+    <script>
+      function show() {
+        const haha = [
+          "Emang lu cari yang kaya gimana?.",
+          "Kriteria lu emang seperti apa?.",
+          "Kriteria yang bau ketek ga?.",
+          "Kriteria yang badboy?.",
+        ];
+
+        const randomIndex = Math.floor(Math.random() * haha.length);
+        document.getElementById("hehe").innerText = haha[randomIndex];
+        document.getElementById("hehe").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
